@@ -9,6 +9,7 @@ class VehicleTypeViewController: UIViewController {
     enum Section: CaseIterable {
         case main
     }
+    
     var dataSource: UICollectionViewDiffableDataSource<Section, VehicleType>!
     
     @IBOutlet weak var collectionView: UICollectionView!
@@ -24,7 +25,7 @@ class VehicleTypeViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationController?.isNavigationBarHidden = false
+        navigationController?.isNavigationBarHidden = false
     }
 }
 
